@@ -24,7 +24,6 @@ bool fillBoard(Sudoku * board, const vector<string> & fillWith) {
             }
         }
     }
-    
     return true;
 }
 
@@ -84,6 +83,9 @@ int main() {
         }
         
         if (!checkAnswer(board.get(), easyAnswer)) {
+            for (const auto & s : easyBoard) {
+                cout << s << endl;
+            }
             cout << "Failed: The board has the wrong answer in it\n";
             return 1;
         }

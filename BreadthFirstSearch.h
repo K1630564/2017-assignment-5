@@ -9,6 +9,11 @@ using std::unique_ptr;
 #include <deque>
 using std::deque;
 
+#include <iostream>
+
+using std::cout;
+using std::endl;
+
 class BreadthFirstSearch {
 
 protected:
@@ -31,6 +36,7 @@ public:
 
     /** Solve the problem.  If a solution found, return a pointer to it.  Otherwise, return nullptr */
     Searchable * solve() {
+
         
         // If there are still incomplete solutions on the queue
         while (!Q.empty()) {
